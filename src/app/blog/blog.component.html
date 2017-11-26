@@ -1,3 +1,8 @@
-<p>
-  blog works!
-</p>
+<ul class="list-group blogs">
+  <li class="list-group-item" *ngFor="let blog of blogs">
+    <h4>{{blog.title}}</h4>
+    <p>{{blog.date}}</p>
+    <p>By: {{blog.author}}</p>
+    <p>{{blog.body}}</p>
+  </li>
+</ul>

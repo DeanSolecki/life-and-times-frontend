@@ -10,6 +10,8 @@ import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { BlogComponent } from './blog/blog.component';
 import { CodeComponent } from './code/code.component';
 import { AboutComponent } from './about/about.component';
+import { BlogService } from './blog.service';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 
 @NgModule({
@@ -19,14 +21,15 @@ import { AboutComponent } from './about/about.component';
     AppSidebarComponent,
     BlogComponent,
     CodeComponent,
-    AboutComponent
+    AboutComponent,
+    BlogDetailComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
