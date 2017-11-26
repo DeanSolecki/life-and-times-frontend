@@ -21,9 +21,4 @@ export class BlogComponent implements OnInit {
     this.blogService.getBlogs()
       .subscribe(blogs => this.blogs = blogs);
   }
-
-  showFull(element, body: string): void {
-    // element.textContent = body;
-    element.parentElement.textContent = body;
-  }
 }
