@@ -1,0 +1,17 @@
+h4 {
+  text-align: center;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #666;
+}
+
+li {
+  border: none;
+  background: none;
+}
