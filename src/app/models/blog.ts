@@ -4,4 +4,6 @@ export class Blog {
   date: string;
   id: number;
   title: string;
+  category: string;
+  subCategory: string;
 }
